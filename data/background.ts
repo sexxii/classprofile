@@ -1,3 +1,5 @@
+// background.ts is updated for 2022
+
 let INTERNATIONAL = [{
   'name': 'Canadian',
   'value': 50,
