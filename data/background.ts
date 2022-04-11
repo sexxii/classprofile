@@ -59,6 +59,14 @@ const ETHNICITY = [{
   "name": "Middle Eastern",
   "value": 1,
   "toggle": "ethnicity-all"
+}, {
+  "name": "Black",
+  "value": 2,
+  "toggle": "ethnicity-all"
+}, {
+  "name": "Latin American",
+  "value": 1,
+  "toggle": "ethnicity-all"
 }]
 
 // What is your gender?
