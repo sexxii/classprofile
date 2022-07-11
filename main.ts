@@ -12,14 +12,61 @@ import { renderDotPlot, renderBinnedDotLine } from './shared/dotplot.js';
 import { renderHistogram } from './shared/histogram.js';
 import { renderGeographicMap } from './shared/geographicmap.js';
 
-import { TRANSFERRED,TERM_TRANSFERRED,REASONS_TRANSFERRED, DISLIKED_COURSES_TRANSFERRED,REGRET_TRANSFFERED } from './data/transfers'
+import {
+  LAST_SE_TERM,
+  REASONS_TRANSFERRED,
+  HAPPY_SWITCHING,
+  START_AGAIN_IN_SE,
+  SWITCHER_SATISFACTION,
+} from './data/transfers'
 import { EXTRACURRICULARS, GROCERY_STORES, TRAVEL_LOCATIONS, RESTAURANTS, SLEEP_TIME, SLEEP_DURATION, COOKING_FREQUENCY, EATING_OUT_FREQUENCY, FAVOURITE_EXERCISE, DESIGN_TEAM, PARTIES, HAPPY_THINGS, NEW_HOBBIES, PROGRAMMING_LANGUAGE, EDITOR, MOBILE_OS } from './data/lifestyle';
 import { FAVOURITE_MANDATORY, FAVOURITE_ELECTIVE, DISLIKED_MANDATORY, ATTENDANCE, GRADES, PARENT_GRADES, ATTENDANCE_GRADE, CAMPUS_LOCATION_PRE, CAMPUS_LOCATION_POST, FAVOURITE_PROF_COUNT, FAILING, OPTIONS, OVERLOADING, OVERLOADING_REASONS, LARGEST_WORKLOAD, TRANSFER_FROM, ENRICHED_VS_GRADES, SLEEP_VS_GRADES, ENTRANCE_VS_GRADES, GRADES_OFFICIAL } from './data/academics';
-import { INTERNATIONAL, PARENT_EDUCATION, ETHNICITY, GENDER, YEAR_OF_BIRTH, SEXUAL_ORIENTATION, HOME_LOCATION, FAMILY_INCOME, IMMIGRATED, SIBLINGS, ENRICHED_PROGRAM, CEGEP, CEGEP_ATTENDED, MOTHER_TONGUE, PROGRAMMING, CAT_OR_DOG, ADMISSION_AVERAGE, EMIGRATED_COUNTRY, NUM_LANGUAGE, LANGUAGE_KNOWN, SIBLINGS_PARENTS } from './data/background';
+import {
+  INTERNATIONAL,
+  PARENT_EDUCATION,
+  ETHNICITY,
+  GENDER,
+  YEAR_OF_BIRTH,
+  SEXUAL_ORIENTATION,
+  HOME_LOCATION,
+  FAMILY_INCOME,
+  SIBLINGS,
+  HS_TYPE,
+  ENRICHED_PROGRAM,
+  APS_TAKEN,
+  IBS_TAKEN_HL,
+  IBS_TAKEN_SL,
+  CEGEP,
+  CEGEP_ATTENDED,
+  MOTHER_TONGUE,
+  FAVOURITE_PET,
+  ADMISSION_AVERAGE,
+  NUM_LANGUAGE,
+  LANGUAGES_KNOWN,
+  SIBLING_TYPE,
+  TRANS_INTO_SE,
+} from './data/background';
 import { ORIGINAL, CHOOSE_PROGRAM, GENDER_RATING } from './data/outcome';
 import { SALARY, WORK_LOCATION, FAVOURITE_LOCATION, HACKATHON_SALARY, SIDE_SALARY, ADMISSION_SALARY, COMPANY_WORK_COUNT, FAVOURITE_COMPANIES, GRADE_SALARY, GENDER_SALARY,LATE_INTERVIEWER, LATE_INTERVIEW, MISSED_INTERVIEW, FAVOURITE_COOP, FAVOURITE_COOP_REASON, COOP_RATINGS, COOP_TYPES, COOP_BREAKDOWN, COOP_JOBS } from './data/coop';
 import { BURNOUT, FIGHTS, REDDIT_USAGE, CRYING, TRANSFER_THOUGHTS, DROPOUT_THOUGHTS, SE21_GRAD } from './data/misc';
-import { POST_GRAD, POST_LOCATION, MOTIVATIONS, FULL_TIME_COMPENSATION, POST_RETURN_HOME, POST_CONTENTNESS, COOP_CONVERSION, FULL_TIME_COMPANY, CONT_FYDP, PENG } from './data/future';
+import {
+  POST_GRAD,
+  POST_LOCATION,
+  MOTIVATIONS_FIRST,
+  MOTIVATIONS_SECOND,
+  MOTIVATIONS_THIRD,
+  FULL_TIME_COMPENSATION,
+  COOP_CONVERSION,
+  POST_CONTENTNESS,
+  FULL_TIME_COMPANY,
+  CONT_FYDP,
+  PENG,
+  LAST_COOP_TERM_RETURN,
+  FULL_TIME_COMPANY_TYPE,
+  PERCENT_REMOTE,
+  PLANNED_TIME_AT_COMPANY,
+  RETURN_TO_HOME_COUNTRY,
+} from './data/future';
 import { FAMILY, FRIENDSHIPS, ROMANCE } from './data/relationships';
 import { BUDGET, INVEST, RESP, SCHOOL_EXPENSES, NEW_DEBT, LOANS } from './data/finances';
 import {SICK, OHIP, MENTAL_HEALTH, MENTAL_HEALTH_ISSUES, EXERCISE_FREQ, INTRAMURALS, EXERCISE_TYPE, EXERCISE_WORDS, WEIGHT, RECREATIONAL_SUBSTANCES, IMPOSTER_SYNDROME, IMPOSTER_SYNDROME_NOW} from './data/health';
@@ -543,13 +590,15 @@ function renderBackground(options) {
   renderPieChart(d3.select('#year-of-birth'), YEAR_OF_BIRTH, options.width * 0.75, options.width * 0.75);
   renderPieChart(d3.select('#sexual-orientation'), SEXUAL_ORIENTATION, options.width * 0.75, options.width * 0.75);
   renderHorizontalBarChat(d3.select('#home-location'), HOME_LOCATION, 400, 300, false);
-  renderPieChart(d3.select('#immigrated'), IMMIGRATED, options.width * 0.75, options.width * 0.75);
   renderHorizontalBarChat(d3.select('#siblings'), SIBLINGS, 400, 300, false);
+  renderHorizontalBarChat(d3.select('#hs-type'), HS_TYPE, 400, 300, false);
   renderHorizontalBarChat(d3.select('#enriched-program'), ENRICHED_PROGRAM, 400, 300, false);
+  renderHorizontalBarChat(d3.select('#aps-taken'), APS_TAKEN, 400, 300, false);
+  renderHorizontalBarChat(d3.select('#ibs-hl'), IBS_TAKEN_HL, 400, 300, false);
+  renderHorizontalBarChat(d3.select('#ibs-sl'), IBS_TAKEN_SL, 400, 300, false);
   renderPieChart(d3.select('#cegep'), CEGEP, options.width * 0.75, options.width * 0.75);
   renderHorizontalBarChat(d3.select('#cegep-attended'), CEGEP_ATTENDED, 400, 300, true);
   renderHorizontalBarChat(d3.select('#mother-tongue'), MOTHER_TONGUE, 400, 300, true);
-  renderPieChart(d3.select('#programming'), PROGRAMMING, options.width * 0.75, options.width * 0.75);
   renderHistogram(d3.select('#admission-average'),
     ADMISSION_AVERAGE,
     options.width,
@@ -561,13 +610,9 @@ function renderBackground(options) {
     }
   );
   renderHorizontalBarChat(d3.select('#num-languages'), NUM_LANGUAGE, options.width, 280, false);
-  renderHorizontalBarChat(d3.select('#known-languages'), LANGUAGE_KNOWN, options.width, 280, true);
-  renderHorizontalBarChat(d3.select('#emigrated'), EMIGRATED_COUNTRY, options.width, 280, true);
-  renderGroupedBarChart(d3.select('#siblings-parents'), SIBLINGS_PARENTS, options.width, 250, siblings_parents_legend,
-  {
-    yAxisTitle: 'Number of Students',
-    xAxisTitle: 'Number of Siblings'
-  });
+  renderHorizontalBarChat(d3.select('#known-languages'), LANGUAGES_KNOWN, options.width, 280, true);
+  // renderHorizontalBarChat(d3.select('#transfer-se'), TRANS_INTO_SE, options.width, 280, true);
+  renderPieChart(d3.select('#sibling-type'), SIBLING_TYPE, options.width * 0.75, options.width * 0.75);
 }
 
 function renderOutcome(options) {
@@ -606,7 +651,7 @@ function renderMisc(options) {
   renderHorizontalBarChat(d3.select('#burnout'), BURNOUT, options.width, 250, false);
   renderPieChart(d3.select('#fights'), FIGHTS, options.width * 0.75, options.width * 0.75);
   renderHorizontalBarChat(d3.select('#reddit'), REDDIT_USAGE, options.width, 150, false);
-  renderPieChart(d3.select('#cat-or-dog'), CAT_OR_DOG, options.width * 0.75, options.width * 0.75);
+  renderPieChart(d3.select('#fav-pet'), FAVOURITE_PET, options.width * 0.75, options.width * 0.75);
   renderHorizontalBarChat(d3.select('#crying'), CRYING, options.width, 250, false);
   renderPieChart(d3.select('#transfer-thoughts'), TRANSFER_THOUGHTS, options.width * 0.75, options.width * 0.75);
   renderPieChart(d3.select('#dropout-thoughts'), DROPOUT_THOUGHTS, options.width * 0.75, options.width * 0.75);
@@ -619,15 +664,30 @@ function renderFuture(options) {
   renderPieChart(d3.select('#coop-conversion'), COOP_CONVERSION, options.width * 0.75, options.width * 0.75);
   renderPieChart(d3.select('#cont-fydp'), CONT_FYDP, options.width * 0.75, options.width * 0.75);
   renderPieChart(d3.select('#peng'), PENG, options.width * 0.75, options.width * 0.75);
-  renderPieChart(d3.select('#post-return-home'), POST_RETURN_HOME, options.width * 0.75, options.width * 0.75);
+  renderPieChart(d3.select('#last-coop-return-home'), LAST_COOP_TERM_RETURN, options.width * 0.75, options.width * 0.75);
+  renderHorizontalBarChat(d3.select('#full-time-company-type'), FULL_TIME_COMPANY_TYPE, options.width, 180, true);
+  renderHistogram(d3.select('#percent-remote'),
+    PERCENT_REMOTE,
+    options.width,
+    200,
+    {
+      binCount: 7,
+      yAxisTitle: 'Number of Students',
+      xAxisTitle: 'Estimated Job Percentage Remote',
+    }
+  );
+  renderPieChart(d3.select('#planned-time-company'), PLANNED_TIME_AT_COMPANY, options.width * 0.75, options.width * 0.75);
+  renderPieChart(d3.select('#return-home-country'), RETURN_TO_HOME_COUNTRY, options.width * 0.75, options.width * 0.75);
 
   renderHorizontalBarChat(d3.select('#post-grad'), POST_GRAD, options.width, 150, true);
   renderHorizontalBarChat(d3.select('#post-location'), POST_LOCATION, options.width, 180, true);
-  renderHorizontalBarChat(d3.select('#motivation'), MOTIVATIONS, options.width, 180, true);
+  renderHorizontalBarChat(d3.select('#motivation-first'), MOTIVATIONS_FIRST, options.width, 180, true);
+  renderHorizontalBarChat(d3.select('#motivation-second'), MOTIVATIONS_SECOND, options.width, 180, true);
+  renderHorizontalBarChat(d3.select('#motivation-third'), MOTIVATIONS_THIRD, options.width, 180, true);
   renderHorizontalBarChat(d3.select('#post-contentness'), POST_CONTENTNESS, options.width, 180, false);
 
   renderHistogram(d3.select('#ft-total'),
-    FULL_TIME_COMPENSATION.TOTAL,
+    FULL_TIME_COMPENSATION.year1_total_comp,
     options.width,
     200,
     {
@@ -636,8 +696,8 @@ function renderFuture(options) {
       xAxisTitle: 'CAD (thousands)'
     }
   );
-  renderHistogram(d3.select('#ft-hourly'),
-    FULL_TIME_COMPENSATION.HOURLY,
+  renderHistogram(d3.select('#ft-base'),
+    FULL_TIME_COMPENSATION.base,
     options.width,
     200,
     {
@@ -647,7 +707,7 @@ function renderFuture(options) {
     }
   );
   renderHistogram(d3.select('#ft-stock'),
-    FULL_TIME_COMPENSATION.STOCK,
+    FULL_TIME_COMPENSATION.total_stock_grant,
     options.width,
     200,
     {
@@ -657,7 +717,27 @@ function renderFuture(options) {
     }
   );
   renderHistogram(d3.select('#ft-signing'),
-    FULL_TIME_COMPENSATION.SIGNING,
+    FULL_TIME_COMPENSATION.one_time_bonus,
+    options.width,
+    200,
+    {
+      binCount: 6,
+      yAxisTitle: 'Count',
+      xAxisTitle: 'CAD (thousands)'
+    }
+  );
+  renderHistogram(d3.select('#ft-stock-first-year'),
+    FULL_TIME_COMPENSATION.stock_first_year,
+    options.width,
+    200,
+    {
+      binCount: 6,
+      yAxisTitle: 'Count',
+      xAxisTitle: 'CAD (thousands)'
+    }
+  );
+  renderHistogram(d3.select('#ft-eoy-comp'),
+    FULL_TIME_COMPENSATION.eoy_recurring_comp,
     options.width,
     200,
     {
@@ -669,11 +749,12 @@ function renderFuture(options) {
 }
 
 function renderTransfers(options) {
-  renderPieChart(d3.select('#students-transferred'), TRANSFERRED, options.width * 0.75, options.width * 0.75, false);
-  renderHorizontalBarChat(d3.select('#term-transferred'), TERM_TRANSFERRED, options.width * 0.75, 250, false);
+  // TODO: note small sample size of transfers
+  renderPieChart(d3.select('#last-se-term'), LAST_SE_TERM, options.width * 0.75, options.width * 0.75, false);
   renderPieChart(d3.select('#reasons-transferred'), REASONS_TRANSFERRED, options.width * 0.75, options.width * 0.75);
-  renderHorizontalBarChat(d3.select('#disliked-courses-transferred'), DISLIKED_COURSES_TRANSFERRED, options.width * 0.75, 250);
-  renderPieChart(d3.select('#regret-transferred'), REGRET_TRANSFFERED, options.width * 0.75, options.width * 0.75);
+  renderHorizontalBarChat(d3.select('#happy-switching'), HAPPY_SWITCHING, options.width * 0.75, 250, false);
+  renderHorizontalBarChat(d3.select('#start-again-se'), START_AGAIN_IN_SE, options.width * 0.75, 250);
+  renderHorizontalBarChat(d3.select('#switcher-satisfaction'), SWITCHER_SATISFACTION, options.width * 0.75, 250);
 }
 
 function renderRelationships(options) {
