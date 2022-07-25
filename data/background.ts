@@ -34,39 +34,30 @@ const PARENT_EDUCATION = [{
 const ETHNICITY = [{
   "name": "East Asian Caucasian",
   "value": 2,
-  "toggle": "ethnicity-all"
 }, {
   "name": "Southeast Asian Caucasian",
   "value": 1,
-  "toggle": "ethnicity-all"
 }, {
   "name": "Caucasian",
   "value": 14,
-  "toggle": "ethnicity-all"
 }, {
   "name": "South East Asian",
   "value": 2,
-  "toggle": "ethnicity-all"
 }, {
   "name": "South Asian",
   "value": 6,
-  "toggle": "ethnicity-all"
 }, {
   "name": "East Asian",
   "value": 37,
-  "toggle": "ethnicity-all"
 }, {
   "name": "Middle Eastern",
   "value": 1,
-  "toggle": "ethnicity-all"
 }, {
   "name": "Black",
   "value": 2,
-  "toggle": "ethnicity-all"
 }, {
   "name": "Latin American",
   "value": 1,
-  "toggle": "ethnicity-all"
 }]
 
 // What is your gender?
@@ -453,8 +444,8 @@ const SIBLING_TYPE = [
 
 // Did you transfer into SE?
 const TRANS_INTO_SE = [
-  { "name": "Yes", "value": 44 },
-  { "name": "No", "value": 1 }
+  { "name": "No", "value": 44 },
+  { "name": "Yes", "value": 1 }
 ]
 
 // What was your high school admission average? Enter a number up to 100 (eg. 95)
