@@ -49,37 +49,6 @@ let COURSE_WITH_LARGEST_WORKLOAD = [
   },
 ];
 
-// Of all the 3 Ex-SE, none are feeling burnt out in the 4B term
-let BURNT_OUT = [
-  {
-    name: "Yes",
-    value: 20,
-  },
-  {
-    name: "No",
-    value: 36,
-  },
-  {
-    name: "Unsure",
-    value: 5,
-  },
-];
-
-let SENIORITIS = [
-  {
-    name: "Yes",
-    value: 35,
-  },
-  {
-    name: "No",
-    value: 13,
-  },
-  {
-    name: "Unsure",
-    value: 4,
-  },
-];
-
 let P_ENG = [
   {
     name: "Yes (SE)",
@@ -95,7 +64,7 @@ let P_ENG = [
   },
 ];
 
-let CONSIDERED_DROPPING_OUT_OF_SE = [
+let CONSIDERED_SWITCH_OUT_OF_SE = [
   {
     name: "Yes",
     value: 17,
@@ -110,7 +79,7 @@ let CONSIDERED_DROPPING_OUT_OF_SE = [
   },
 ];
 
-let PROGRAM_TO_DROP_TO = [
+let PROGRAM_TO_SWITCH_TO = [
   {
     name: "Computer Science",
     value: 17,
@@ -159,10 +128,43 @@ let START_AGAIN_PROGRAM = [
   },
 ];
 
+// Of all the 3 Ex-SE, none are feeling burnt out in the 4B term
+let BURNT_OUT = [
+  {
+    name: "Yes",
+    value: 20,
+  },
+  {
+    name: "No",
+    value: 36,
+  },
+  {
+    name: "Unsure",
+    value: 5,
+  },
+];
+
+let SENIORITIS = [
+  {
+    name: "Yes",
+    value: 35,
+  },
+  {
+    name: "No",
+    value: 13,
+  },
+  {
+    name: "Unsure",
+    value: 4,
+  },
+];
+
 let HAPPY_WITH_CHOICE = [
-  { name: "5", value: 49 },
-  { name: "4", value: 9 },
+  { name: "1", value: 0 },
+  { name: "2", value: 0 },
   { name: "3", value: 2 },
+  { name: "4", value: 9 },
+  { name: "5", value: 49 },
 ];
 
 export {
@@ -170,8 +172,8 @@ export {
   BURNT_OUT,
   SENIORITIS,
   P_ENG,
-  CONSIDERED_DROPPING_OUT_OF_SE,
-  PROGRAM_TO_DROP_TO,
+  CONSIDERED_SWITCH_OUT_OF_SE,
+  PROGRAM_TO_SWITCH_TO,
   CONSIDERED_DROPPING_OUT_OF_UNI,
   START_AGAIN_PROGRAM,
   HAPPY_WITH_CHOICE,
