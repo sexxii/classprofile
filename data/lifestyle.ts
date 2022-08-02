@@ -149,7 +149,7 @@ let PARTY_BEFORE_COVID = [
   },
 ];
 
-let PARTY_AFTER_COVID = [
+let PARTY_DURING_COVID = [
   {
     name: "Multiple times a week",
     value: 0,
@@ -186,5 +186,5 @@ export {
   ALL_NIGHTERS,
   PERCENT_HOME_MADE,
   PARTY_BEFORE_COVID,
-  PARTY_AFTER_COVID,
+  PARTY_DURING_COVID,
 };
