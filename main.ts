@@ -1917,7 +1917,10 @@ function renderRelationships(options) {
     options.fullWidth,
     500,
     friends_groups,
-    {}
+    {
+      yAxisTitle: "Number of Respondents",
+      xAxisTitle: "Number of Friends",
+    }
   );
 
   renderHorizontalBarChat(
