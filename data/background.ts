@@ -1,33 +1,3 @@
-// Are you an International Student?
-const INTERNATIONAL = [{
-  "name": "Canadian",
-  "value": 50,
-}, {
-  "name": "International",
-  "value": 5,
-}, {
-  "name": "Prefer not to disclose",
-  "value": 10,
-}]
-
-// What is the highest level of education your parents/guardians have completed?
-const PARENT_EDUCATION = [{
-  "name": "Masters",
-  "value": 17
-}, {
-  "name": "Bachelors",
-  "value": 13
-}, {
-  "name": "Prefer not to disclose",
-  "value": 11
-}, {
-  "name": "Doctorates",
-  "value": 7
-}, {
-  "name": "College Diploma",
-  "value": 2
-}];
-
 // Which of the following ethnic group(s) best describes you?
 const ETHNICITY = [{
   "name": "East Asian Caucasian",
@@ -223,6 +193,36 @@ const MOTHER_TONGUE = [{
   "value": 1
 }];
 
+// Are you an International Student?
+const INTERNATIONAL = [{
+  "name": "Canadian",
+  "value": 50,
+}, {
+  "name": "International",
+  "value": 5,
+}, {
+  "name": "Prefer not to disclose",
+  "value": 10,
+}]
+
+// What is the highest level of education your parents/guardians have completed?
+const PARENT_EDUCATION = [{
+  "name": "Masters",
+  "value": 17
+}, {
+  "name": "Bachelors",
+  "value": 13
+}, {
+  "name": "Prefer not to disclose",
+  "value": 11
+}, {
+  "name": "Doctorates",
+  "value": 7
+}, {
+  "name": "College Diploma",
+  "value": 2
+}];
+
 // How many siblings do you have?
 const SIBLINGS = [{
   "name": "0",
@@ -383,7 +383,7 @@ const CEGEP = [{
 }];
 
 // What program were you in?
-const CEGEP_ATTENDED = [{
+const CEGEP_TAKEN = [{
   "name": "Computer Science",
   "value": 1
 }, {
@@ -449,13 +449,13 @@ const TRANS_INTO_SE = [
 const ADMISSION_AVERAGE = [96, 94, 97, 95.5, 96, 96, 94, 99, 96, 93, 97, 89, 97, 96, 96, 98, 96, 96, 98, 98, 96, 97.6, 97, 95, 95, 97.5, 95, 96, 96, 96, 95, 96, 83, 96, 95.2, 98, 94, 93, 98, 93, 95, 99.2, 95, 97, 91, 99, 96, 94, 96, 97, 95.5]
 
 export {
-  INTERNATIONAL,
-  PARENT_EDUCATION,
   ETHNICITY,
   GENDER,
   YEAR_OF_BIRTH,
   SEXUAL_ORIENTATION,
   HOME_LOCATION,
+  INTERNATIONAL,
+  PARENT_EDUCATION,
   FAMILY_INCOME,
   SIBLINGS,
   HS_TYPE,
@@ -464,7 +464,7 @@ export {
   IBS_TAKEN_HL,
   IBS_TAKEN_SL,
   CEGEP,
-  CEGEP_ATTENDED,
+  CEGEP_TAKEN,
   MOTHER_TONGUE,
   FAVOURITE_PET,
   ADMISSION_AVERAGE,
