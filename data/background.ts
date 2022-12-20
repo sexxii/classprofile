@@ -89,7 +89,7 @@ const HOME_LOCATION = [{
 }, {
   "name": "British Columbia",
   "value": 4
-}, , {
+}, {
   "name": "Quebec",
   "value": 2
 }, {

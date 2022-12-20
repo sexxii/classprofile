@@ -1278,7 +1278,7 @@ function renderBackground(options) {
     NUM_LANGUAGE,
     options.width,
     280,
-    true
+    false
   );
 
   renderHorizontalBarChat(
