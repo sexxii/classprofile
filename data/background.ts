@@ -206,22 +206,23 @@ const INTERNATIONAL = [{
 }]
 
 // What is the highest level of education your parents/guardians have completed?
-const PARENT_EDUCATION = [{
-  "name": "Masters",
-  "value": 17
-}, {
-  "name": "Bachelors",
-  "value": 13
-}, {
-  "name": "Prefer not to disclose",
-  "value": 11
-}, {
-  "name": "Doctorates",
-  "value": 7
-}, {
-  "name": "College Diploma",
-  "value": 2
-}];
+const PARENT_EDUCATION = [
+  {
+    "name": "College Diploma",
+    "value": 2
+  }, {
+    "name": "Bachelors",
+    "value": 13
+  }, {
+    "name": "Masters",
+    "value": 17
+  }, {
+    "name": "Doctorates",
+    "value": 7
+  }, {
+    "name": "Prefer not to disclose",
+    "value": 11
+  }];
 
 // How many siblings do you have?
 const SIBLINGS = [{
@@ -382,7 +383,7 @@ const CEGEP = [{
   "value": 3
 }];
 
-// What program were you in?
+// What CEGEP program were you in?
 const CEGEP_TAKEN = [{
   "name": "Computer Science",
   "value": 1
@@ -434,15 +435,9 @@ const FAVOURITE_PET = [
 // Were you an eldest or youngest child?
 const SIBLING_TYPE = [
   { "name": "Oldest", "value": 25 },
-  { "name": "Youngest", "value": 12 },
   { "name": "Middle", "value": 4 },
+  { "name": "Youngest", "value": 12 },
   { "name": "Only", "value": 15 },
-]
-
-// Did you transfer into SE?
-const TRANS_INTO_SE = [
-  { "name": "No", "value": 44 },
-  { "name": "Yes", "value": 1 }
 ]
 
 // What was your high school admission average? Enter a number up to 100 (eg. 95)
@@ -471,5 +466,4 @@ export {
   NUM_LANGUAGE,
   LANGUAGES_KNOWN,
   SIBLING_TYPE,
-  TRANS_INTO_SE,
 }

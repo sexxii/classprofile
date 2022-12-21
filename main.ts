@@ -90,7 +90,6 @@ import {
   CEGEP_TAKEN,
   ADMISSION_AVERAGE,
   FAVOURITE_PET,
-  TRANS_INTO_SE,
 } from "./data/background";
 import {
   COURSE_WITH_LARGEST_WORKLOAD,
@@ -1295,7 +1294,7 @@ function renderBackground(options) {
     PARENT_EDUCATION,
     options.width,
     280,
-    true
+    false
   );
 
   renderHorizontalBarChat(
@@ -1303,7 +1302,7 @@ function renderBackground(options) {
     FAMILY_INCOME,
     options.width,
     280,
-    true
+    false
   );
 
   renderHorizontalBarChat(
@@ -1311,7 +1310,7 @@ function renderBackground(options) {
     SIBLINGS,
     options.width,
     280,
-    true
+    false
   );
 
   renderHorizontalBarChat(
@@ -1319,7 +1318,7 @@ function renderBackground(options) {
     SIBLING_TYPE,
     options.width,
     280,
-    true
+    false
   );
 
   // Highschool
@@ -1376,14 +1375,6 @@ function renderBackground(options) {
     CEGEP_TAKEN,
     options.width,
     280,
-    true
-  );
-
-  renderHorizontalBarChat(
-    d3.select("#transfer-into-se"),
-    TRANS_INTO_SE,
-    400,
-    300,
     true
   );
 
