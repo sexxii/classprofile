@@ -1285,7 +1285,7 @@ function renderBackground(options) {
     INTERNATIONAL,
     options.width,
     280,
-    true
+    false
   );
 
   // Family
