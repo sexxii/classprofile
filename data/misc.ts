@@ -1,27 +1,27 @@
 // Tell us a story - happy or sad - from your time in SE!
-let SE_STORYTIME = [];
+let SE_STORYTIME = ["I loved the moment when someone brought binoculars to ECE 105 and Mansour sat them at the front of the class. That prof was an absolute legend!", "My best friend was the person I first met at Waterloo!", "Loved Mansour's stories", "I will always remember the time that a former SE Director gave my friend and I a ride across South Island, New Zealand in the middle of the night because neither of could drive. SE community really coming in clutch!", "I once dropped my phone in the XL bowl at Gol's Noodles.", "Studying in the SE lab at 1am, had a final the next day, stressed out. Friend walked in with a bottle of alcohol and we got drunk. We both passed the final LOL", "I was living with 4 friends once and since we're all lazy and cheap, we calculated that coupon discounted XL Dominos pizzas split up over multiple meals was the most cost efficient way to make meals without cooking. By the end of the term we had absolutely stuffed an entire closet with boxes. So we brought them all to the fire pit close to Laurel Creek and had a big glorious bonfire."];
 
 // Can you share your favourite moment from 2021 or 2022?
-let FAVOURITE_2021_2022_MOMENT = [];
+let FAVOURITE_2021_2022_MOMENT = ["I loved 4B when everything moved back to in person and I got to hang out with people in our cohort gain.", "A bunch of my friends/classmates came as moral support when I got my ears pierced this term :))", "When Peter Buhr started using crazy analogies in CS 343 - insanely underrated storyteller", "Falling in (real!) love for the first time :)", "Pranks night :)! Finally seeing so many of our classmates after 2 years, putting our jokes and signs all over DC, and remembering how fun and creative everyone is! Running around DC and the Engineering buildings, and seeing our banner next to all of the other engineering programs.", "When I realized I didn't have to go back to Waterloo."
+];
 
 // Can you share your favourite moment from first year?
-let FAVOURITE_FIRST_YEAR_MOMENT = [];
+let FAVOURITE_FIRST_YEAR_MOMENT = ["Getting a co-op :)", "On the first day of class, when the ECE 105 professor walked up to the board, no introduction or anything - and started scribbling physics problems on the whiteboard - before he gave us his name, Mansour 😂 and he became one of the most legendary profs in SE", "I think that the most memorable parts of my first year were the late night ECE105 study sessions with Prof Mansour. They were extremely helpful and always entertaining.", "MC 1085", "Staying up until 3 am working on the SE101 project with friends", "Saturday night EngPlay show, just jamming to the music off-stage.", "Got drunk, slept for 3 hours, woke up and aced quiz", "cusec was a fun time",];
 
 // Any other fun first year stories?
-let OTHER_FIRST_YEAR_STORIES = [];
+let OTHER_FIRST_YEAR_STORIES = ["In CS 137 someone told us iClickers were not required for that specific day, turns out it was.", "Slept in and missed half of the combinatorics exam :') still passed thankfully", "One of our classmates threw a party in an AirBNB and trashed the place, and someone punched through the window of the front door; in class he was reviewing the fines (esp. for strange things, like \"moved plant\").", "A friend of mine thought it would be fun to try and pat a goose during mating season but instead he got one of his fingers bitten, ******* idiot lol", "Every time my friends would get drunk after a party, we would sneak into EIT so we could look at the dinosaurs.", "V1 Great Hall 24-hour grind"];
 
 // Can you share a funny story about interviewing or co-op?
-let INTERVIEW_COOP_STORY = [];
+let INTERVIEW_COOP_STORY = ["Thought interview was the next day at the same time so overslept, never picked an 8:30am time slot after that", "Interviewer vaped the whole time", "first interview ever I had with a FAANG company, when the interviewer asked \"how did i do X\" from my resume, I told them \"I kind of just got lucky i guess\"", "An interviewer looked at my transcript for a few minutes and then asked why I did so bad in Linear Algebra.", "My boss said the only reason they hired me was because my cover letter was so arrogant and they had to see what I was like.", "Happened during first year, this interviewer tried to recruit me as a technical co-founder for his startup. I barely knew how to code, and had the toughest time getting myself out of that interview!", "I got food poisoning the day before my onsite and spent the whole night throwing up. I forced down a few coconut waters and matcha teas before putting on my best high-energy face. During my second interview, I leaned over to fart - and instead, I shat my pants. I excused myself from the interview, went to the bathroom to deal with it, and then did the next 3 interviews before going home and lying on my bed wide-eyed, unable to sleep because of all the caffeine.", "A coop asked me to design an elevator, and I spent half an hour talking about the aesthetic designs of an elevator. E.g. have a nice rug and nice music", "Was super sick for uber interview, coughed so much the interviewer covered their face with their tshirt - and no, I didn't get the job",];
 
 // What was your favourite co-op experience?
-let COOP_STORY = [];
+let COOP_STORY = ["flying out to phoenix to visit a call center and spending a few days afterwards driving around alone in arizona/sleeping in car", "Working in Singapore, lived in a hostel for 4 months while doing the co-op. Made friends from all different nationalities and age groups (18-65)", "Going to Yosemite for a full weekend of sick hikes and amazing friends.", "I changed the preferred yogurt brand of my company by re-arranging the office fridge.", "Company-wide offsite and bonfire", "Working at a company of 10 people as one of three developers", "FOOD. Chocolate covered nuts, cheese, cookies, granola bars, juice and LaCroix. And other office perks like lunchtime Nintendo Switch games, Ping Pong, PS4, Jackbox.", "One time a coworker described the placenta as the Decorator Pattern and it stuck with me ever since", "Getting flown to SF for a company Christmas party", "PM at Apple", "Sharing a building with another company and all the coops from both companies would hang out.", "Very first coop, met some great friends and had a blast!", "Working at a startup in downtown Toronto and hanging out with the other coops after work every day!", "Deciding to go to the London office of my company when returning as an intern was a great idea since I got to live in an entirely new continent to me.", "Going to California for the first time, and living with friends.", "Playing foosball with the other co-ops.", "Going to NYC on a business trip with the rest of my company!", "Sitting around the table eating with the other interns at Wish summer camp (Winter 2019)."];
 
 // Share your best party story (Git Lit, Full SEnd, etc) (slighty edited for anonimity + brevity)
-let PARTY_STORY = ["chugged a part of a bottle of vodka dring a full send, went home and threw up in front of our bathroom D:",
-  "Got naked miled, had to drink half a bottle of pink whitney", "A few years ago, I played beer pong with some random I just got introduced to. While playing, they gestured by putting their hand on their elbow to tell me that I was reaching over the table. I didn't know that was a rule though, so I interpreted the gesture as challenging me to get a ball in by hitting it with my elbow so I tried doing that. They laughed their ass off and called me stupid which my drunk ass got super offended by so I went up and said \"DO YOU WANNA FIGHT ??\", which they just told me to calm down and we split up. 10 minutes later I found them again and we were both just like \"aye that was a fun game and you're actually pretty cool\", hugged it out, and just vibed for a while. Wish I could remember their face or name, though.", "Loved all SE parties", "Had a party at V1 that was so bad the host almost got kicked out of residence.", "My friend passed out early in the bathroom and I had to periodically send guys to the bathroom to check up on him", "Lmao I don't go to parties", "I hosted a party, was too drunk to go to Phil's after, then woke up having peed the bed."];
+let PARTY_STORY = ["chugged a part of a bottle of vodka dring a full send, went home and threw up in front of our bathroom D:", "Got naked miled, had to drink half a bottle of pink whitney", "Loved all SE parties", "Had a party at V1 that was so bad the host almost got kicked out of residence.", "My friend passed out early in the bathroom and I had to periodically send guys to the bathroom to check up on him", "I hosted a party, was too drunk to go to Phil's after, then woke up having peed the bed.", "Lmao I don't go to parties"];
 
 // How did COVID-19 affect your personal relationships (friends, family, romantic, or otherwise)? (slighty edited for anonimity + brevity)
-let COVID_RELATIONSHIPS = ["Changed type of interactions, arguably they got stronger", "Hard to meet new people", "I was able to see my parents and partner more often", "I am a, very ironically, anti-technology person. So I without in-person interaction it went from \"I could walk into any room and find people I hang out with\" to \"there are like 2 people I talk to regularly\".", "Got time to be closer with family", "Hung out more with high school friends", "Lost touch with a few friends", "I love my family, so staying at home was good. However, I missed seeing my friends, and having fun in extracurriculars. Also I had one relationship online but it was a bit unhealthy, so I'm glad it didn't have the chance to make its way to in-person.", "Honestly really bad, relationship and friends and family all fell apart :(", "No affect, got a girlfriend during COVID", "Built closer friendships with close friends are lost touch with more distant friends", "I became closer to people who matter the most and I'm forever grateful for that!", "Encouraged me to end a non-fulfilling long-term romantic relationship", "Had to put more intentional effort into reaching out and scheduling calls with the people I wanted to stay in touch with", "I think I ended up talking to people more frequently since video calling became more of a thing", "I feel like I did not get to know people in our cohort as well as I could have, since we spent so much of undergrad remote.", "I got closer with the most important people in my life currently. Before COVID-19, I had a lot of friends, but not a lot of close friends that I had strong emotional connections with. The pandemic allowed me to form really close connections with my \"bubble\", and I've been so much happier since :)", "My mom started getting mad at me again"];
+let COVID_RELATIONSHIPS = ["Hard to meet new people", "I was able to see my parents and partner more often", "I am a, very ironically, anti-technology person. So I without in-person interaction it went from \"I could walk into any room and find people I hang out with\" to \"there are like 2 people I talk to regularly\".", "Got time to be closer with family", "Hung out more with high school friends", "Lost touch with a few friends", "My mom started getting mad at me again", "I love my family, so staying at home was good. However, I missed seeing my friends, and having fun in extracurriculars. Also I had one relationship online but it was a bit unhealthy, so I'm glad it didn't have the chance to make its way to in-person.", "Honestly really bad, relationship and friends and family all fell apart :(", "Got into a relationship during COVID", "Built closer friendships with close friends are lost touch with more distant friends", "I became closer to people who matter the most and I'm forever grateful for that!", "Encouraged me to end a non-fulfilling long-term romantic relationship", "Had to put more intentional effort into reaching out and scheduling calls with the people I wanted to stay in touch with", "I think I ended up talking to people more frequently since video calling became more of a thing", "I feel like I did not get to know people in our cohort as well as I could have, since we spent so much of undergrad remote.", "I got closer with the most important people in my life currently. Before COVID-19, I had a lot of friends, but not a lot of close friends that I had strong emotional connections with. The pandemic allowed me to form really close connections with my \"bubble\", and I've been so much happier since :)"];
 
 // What has been your favourite place to travel during your undergrad?
 let UNDERGARD_TRAVEL = [{{ "name:": " Thailand", "value": 1 }, { "name:": "Dubai", "value": 1 }, { "name:": "Vancouver", "value": 4 }, { "name:": "Iceland", "value": 3 }, { "name:": "Chile was a lot of fun. Got to hike the W trek in Torres Del Paine.", "value": 1 }, { "name:": "Switzerland ", "value": 1 }, { "name:": "Sausalito, California", "value": 1 }, { "name:": " Singapore", "value": 2 }, { "name:": "Hong Kong", "value": 1 }, { "name:": "Korea", "value": 1 }, { "name:": "Montreal", "value": 1 }, { "name:": "Bay Area", "value": 1 }, { "name:": "Australia", "value": 1 }, { "name:": "I travelled to London for co-op, then Paris afterwards which is the only real trip I've done.", "value": 1 }, { "name:": "My roommate's room", "value": 1 }, { "name:": "California", "value": 1 }, { "name:": " Paris", "value": 1 }, { "name:": "Europe", "value": 1 }, { "name:": "Italy", "value": 1 }];
@@ -100,84 +100,25 @@ let SOCIAL_MEDIA = [2, 10, 6, 7, 15, 4, 3, 15, 8, 0.5, 10, 7, 7, 7, 2, 10, 55, 7
 // On average, How many hours did you play video games per week during your undergrad? (put 0 if never on it)
 let VIDEO_GAMES = [3, 6, 0, 4, 0, 0, 12, 12, 8, 7, 1, 0.5, 4, 5, 0, 6, 2, 0, 1, 10, 3, 20, 0.25, 0, 1, 0, 0, 0.5, 15, 2, 1, 5, 1, 5, 40, 0, 12, 1, 0, 10, 2, 1, 0, 0, 2, 2, 0];
 
-// Old data starts here
-
-let BURNOUT = [{
-  "name": "0",
-  "value": 8
-}, {
-  "name": "1",
-  "value": 8
-}, {
-  "name": "2",
-  "value": 10
-}, {
-  "name": "3",
-  "value": 2
-}, {
-  "name": "4",
-  "value": 4
-}, {
-  "name": "5",
-  "value": 1
-}, {
-  "name": "6",
-  "value": 4
-}, {
-  "name": "7",
-  "value": 2
-}, {
-  "name": "8",
-  "value": 8
-}];
-
-let REDDIT_USAGE = [{
-  "name": "< 1 Hour",
-  "value": 0
-}, {
-  "name": "[1,3) Hours",
-  "value": 33
-}, {
-  "name": "[3,5) Hours",
-  "value": 6
-}, {
-  "name": "[5,7) Hours",
-  "value": 1
-}, {
-  "name": ">= 7 Hours",
-  "value": 0
-}]
-
-let TRANSFER_THOUGHTS = [{
-  "name": "Yes",
-  "value": 29,
-}, {
-  "name": "No",
-  "value": 21
-}]
-
-let DROPOUT_THOUGHTS = [{
-  "name": "Yes",
-  "value": 4,
-}, {
-  "name": "No",
-  "value": 46
-}]
-
-let SE21_GRAD = [{
-  "name": "Yes",
-  "value": 44,
-}, {
-  "name": "No",
-  "value": 6
-}]
-
 export {
-  BURNOUT,
+  SE_STORYTIME,
+  FAVOURITE_2021_2022_MOMENT,
+  FAVOURITE_FIRST_YEAR_MOMENT,
+  OTHER_FIRST_YEAR_STORIES,
+  INTERVIEW_COOP_STORY,
+  COOP_STORY,
+  PARTY_STORY,
+  COVID_RELATIONSHIPS,
+  UNDERGARD_TRAVEL,
+  POST_COVID_TRAVEL,
+  FAVOURITE_RESTAURANT,
+  GROCERY,
+  LOCATION_ONLINE_TERM,
+  FAVOURITE_ANIMAL,
+  FAVOURITE_COLOR,
   FIGHTS,
-  REDDIT_USAGE,
   CRYING,
-  TRANSFER_THOUGHTS,
-  DROPOUT_THOUGHTS,
-  SE21_GRAD
+  REDDIT,
+  SOCIAL_MEDIA,
+  VIDEO_GAMES,
 }
