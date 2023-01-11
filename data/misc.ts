@@ -60,7 +60,7 @@ let LOCATION_ONLINE_TERM = [{ "name": "Vancouver", "value": 19 }, { "name": "Tor
 let FAV_ANIMAL = [{ "name": "Dog", "value": 28 }, { "name": "Cat", "value": 17 }, { "name": "Fish", "value": 4 }, { "name": "Bird", "value": 3 }, { "name": "Rabbit", "value": 2 }, { "name": "Horse", "value": 1 }, { "name": "Lizard", "value": 1 }, { "name": "Turtle", "value": 1 }, { "name": "Leaping Blenny", "value": 1 }, { "name": "None", "value": 2 }];
 
 // Favourite colour? (Give a hex code: https://htmlcolorcodes.com/ )
-let FAV_COLOUR = ["000FFF", "F20000", "F7DC6F", "C359FF", "E1D1FF", "FFFB00", "FFF8E9", "FF5733", "42F5AE", "000000", "000000", "CD7300", "00BDFF", "9DECA2", "FFDFF1", "BE41FF", "9D3B4F", "FE9233", "B168ED", "3ABD55", "FAA600", "E22CCC", "C71644", "FFCAB1", "009600", "33BAFF", "696969", "33B8FF", "03FC73", "4.17E+04", "49D2DA", "DCC0FC", "000000", "CB3E20", "000000", "FFE5E2", "00CAFF", "AED2EB", "3DC2B3", "444444", "0079D8"];
+let FAV_COLOUR = ["9DECA2", "000FFF", "00CAFF", "FF5733", "FE9233", "E22CCC", "B168ED", "000000", "009600", "3ABD55", "444444", "FFCAB1", "F20000", "03FC73", "000000", "CB3E20", "CD7300", "0079D8", "F7DC6F", "C359FF", "FFFB00", "49D2DA", "3DC2B3", "AED2EB", "FFE5E2", "FFF8E9", "FAA600", "00BDFF", "BE41FF", "9D3B4F", "FFDFF1", "33BAFF", "33B8FF", "42F5AE", "000000", "C71644", "E1D1FF", "000000", "696969", "DCC0FC"];
 
 // Have you ever physically fought someone outside of controlled martial arts environments, if so how many?
 let FIGHTS = [{

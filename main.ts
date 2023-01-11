@@ -1,6 +1,7 @@
 import * as d3 from "d3";
 import * as $ from "jquery";
 import { renderWordCloud } from "./shared/wordcloud";
+import { renderColorGrid } from "./shared/colourgrid.js";
 import {
   renderHorizontalBarChat,
   renderMultipleHorizontalBarCharts,
@@ -1781,7 +1782,6 @@ function renderCovid(options) {
   );
 }
 
-// Todo
 function renderMisc(options) {
 
   drawWordCloud(d3.select("#fav-restaurant"), FAVOURITE_RESTAURANT, options);
@@ -1811,7 +1811,7 @@ function renderMisc(options) {
     true
   );
 
-  // Todo: FAV_COLOUR
+  renderColorGrid(d3.select("#fav-colour"), FAV_COLOUR, 5, 8, options);
 
   renderHorizontalBarChat(
     d3.select("#fights"),
