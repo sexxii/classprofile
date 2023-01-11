@@ -24,42 +24,66 @@ let PARTY_STORY = ["chugged a part of a bottle of vodka dring a full send, went 
 let COVID_RELATIONSHIPS = ["Hard to meet new people", "I was able to see my parents and partner more often", "I am a, very ironically, anti-technology person. So I without in-person interaction it went from \"I could walk into any room and find people I hang out with\" to \"there are like 2 people I talk to regularly\".", "Got time to be closer with family", "Hung out more with high school friends", "Lost touch with a few friends", "My mom started getting mad at me again", "I love my family, so staying at home was good. However, I missed seeing my friends, and having fun in extracurriculars. Also I had one relationship online but it was a bit unhealthy, so I'm glad it didn't have the chance to make its way to in-person.", "Honestly really bad, relationship and friends and family all fell apart :(", "Got into a relationship during COVID", "Built closer friendships with close friends are lost touch with more distant friends", "I became closer to people who matter the most and I'm forever grateful for that!", "Encouraged me to end a non-fulfilling long-term romantic relationship", "Had to put more intentional effort into reaching out and scheduling calls with the people I wanted to stay in touch with", "I think I ended up talking to people more frequently since video calling became more of a thing", "I feel like I did not get to know people in our cohort as well as I could have, since we spent so much of undergrad remote.", "I got closer with the most important people in my life currently. Before COVID-19, I had a lot of friends, but not a lot of close friends that I had strong emotional connections with. The pandemic allowed me to form really close connections with my \"bubble\", and I've been so much happier since :)"];
 
 // What has been your favourite place to travel during your undergrad?
-let UNDERGARD_TRAVEL = [{{ "name:": " Thailand", "value": 1 }, { "name:": "Dubai", "value": 1 }, { "name:": "Vancouver", "value": 4 }, { "name:": "Iceland", "value": 3 }, { "name:": "Chile was a lot of fun. Got to hike the W trek in Torres Del Paine.", "value": 1 }, { "name:": "Switzerland ", "value": 1 }, { "name:": "Sausalito, California", "value": 1 }, { "name:": " Singapore", "value": 2 }, { "name:": "Hong Kong", "value": 1 }, { "name:": "Korea", "value": 1 }, { "name:": "Montreal", "value": 1 }, { "name:": "Bay Area", "value": 1 }, { "name:": "Australia", "value": 1 }, { "name:": "I travelled to London for co-op, then Paris afterwards which is the only real trip I've done.", "value": 1 }, { "name:": "My roommate's room", "value": 1 }, { "name:": "California", "value": 1 }, { "name:": " Paris", "value": 1 }, { "name:": "Europe", "value": 1 }, { "name:": "Italy", "value": 1 }];
+// let UNDERGARD_TRAVEL = [{ "name": "Thailand", "value": 1 }, { "name": "Dubai", "value": 1 }, { "name": "Vancouver", "value": 4 }, { "name": "Iceland", "value": 3 }, { "name": "Chile was a lot of fun. Got to hike the W trek in Torres Del Paine.", "value": 1 }, { "name": "Switzerland ", "value": 1 }, { "name": "Sausalito, California", "value": 1 }, { "name": " Singapore", "value": 2 }, { "name": "Hong Kong", "value": 1 }, { "name": "Korea", "value": 1 }, { "name": "Montreal", "value": 1 }, { "name": "Bay Area", "value": 1 }, { "name": "Australia", "value": 1 }, { "name": "I travelled to London for co-op, then Paris afterwards which is the only real trip I've done.", "value": 1 }, { "name": "My roommate's room", "value": 1 }, { "name": "California", "value": 1 }, { "name": " Paris", "value": 1 }, { "name": "Europe", "value": 1 }, { "name": "Italy", "value": 1 }];
+let UNDERGARD_TRAVEL = { "Thailand": 1, "Dubai": 1, "Vancouver": 4, "Iceland": 3, "Chile was a lot of fun. Got to hike the W trek in Torres Del Paine.": 1, "Switzerland ": 1, "Sausalito, California": 1, " Singapore": 2, "Hong Kong": 1, "Korea": 1, "Montreal": 1, "Bay Area": 1, "Australia": 1, "I travelled to London for co-op, then Paris afterwards which is the only real trip I've done.": 1, "My roommate's room": 1, "California": 1, " Paris": 1, "Europe": 1, "Italy": 1 };
 
 // When travel restrictions will be lifted, which country/city do you want to visit the most and why?
-let POST_COVID_TRAVEL = [
-  { "name:": "Many Asian countries (Japan, Korea, Singapore, Taiwan ...)", "value": 1 }, { "name:": "Canada", "value": 1 }, { "name:": "Russia; I want to explore the culture and the Russian wilderness", "value": 1 }, { "name:": "Japan", "value": 1 }, { "name:": "Italy", "value": 1 }, { "name:": "Europe and Asia", "value": 1 }, { "name:": "Germany/Munich to watch soccer games", "value": 1 }, { "name:": " Korea, for the soju", "value": 1 }, { "name:": "Tuscaloosa, Alabama to watch a Crimson Tide home football game", "value": 1 }, { "name:": "Singapore, European Union", "value": 1 }, { "name:": "Korea - Fried Chicken", "value": 1 }, { "name:": "Paris, France", "value": 1 }, { "name:": " Japan, big weeb vibes. ", "value": 1 }, { "name:": "Italy because PIZZA", "value": 1 }, { "name:": " South Korea", "value": 1 }, { "name:": "Amsterdam, Netherlands, since I had planned to travel there but cancelled due to Omicron", "value": 1 }, { "name:": "China: see family and embrace culture", "value": 1 }, { "name:": "China, to visit family", "value": 1 }, { "name:": " Japan for the scenic views and the food", "value": 1 }, { "name:": "San Francisco", "value": 1 }, { "name:": " Japan", "value": 1 }, { "name:": "Germany to drive around", "value": 1 }, { "name:": "United Kingdom, Would love to watch a cricket game :D", "value": 1 }, { "name:": "Japan! I love the culture, food, and have never been to Asia before.", "value": 1 }, { "name:": " Tanzania for the Serengeti", "value": 1 }, { "name:": "South America for the ancient ruins", "value": 1 }, { "name:": "India", "value": 1 }, { "name:": "Japan; I want to be in a country where rice is fast food - IMAGINE??? Here if you get a rice bowl, it's more expensive than housing in San Fran, but in Japan it's like their McDonalds 🤤 jokes aside (though highkey I love rice) the traditional culture would be fun to experience, as something very different to Western countries.", "value": 1 }];
+// let POST_COVID_TRAVEL = [
+//   { "name": "Many Asian countries (Japan, Korea, Singapore, Taiwan ...)", "value": 1 }, { "name": "Canada", "value": 1 }, { "name": "Russia; I want to explore the culture and the Russian wilderness", "value": 1 }, { "name": "Japan", "value": 1 }, { "name": "Italy", "value": 1 }, { "name": "Europe and Asia", "value": 1 }, { "name": "Germany/Munich to watch soccer games", "value": 1 }, { "name": " Korea, for the soju", "value": 1 }, { "name": "Tuscaloosa, Alabama to watch a Crimson Tide home football game", "value": 1 }, { "name": "Singapore, European Union", "value": 1 }, { "name": "Korea - Fried Chicken", "value": 1 }, { "name": "Paris, France", "value": 1 }, { "name": " Japan, big weeb vibes. ", "value": 1 }, { "name": "Italy because PIZZA", "value": 1 }, { "name": " South Korea", "value": 1 }, { "name": "Amsterdam, Netherlands, since I had planned to travel there but cancelled due to Omicron", "value": 1 }, { "name": "China: see family and embrace culture", "value": 1 }, { "name": "China, to visit family", "value": 1 }, { "name": " Japan for the scenic views and the food", "value": 1 }, { "name": "San Francisco", "value": 1 }, { "name": " Japan", "value": 1 }, { "name": "Germany to drive around", "value": 1 }, { "name": "United Kingdom, Would love to watch a cricket game :D", "value": 1 }, { "name": "Japan! I love the culture, food, and have never been to Asia before.", "value": 1 }, { "name": " Tanzania for the Serengeti", "value": 1 }, { "name": "South America for the ancient ruins", "value": 1 }, { "name": "India", "value": 1 }, { "name": "Japan; I want to be in a country where rice is fast food - IMAGINE??? Here if you get a rice bowl, it's more expensive than housing in San Fran, but in Japan it's like their McDonalds 🤤 jokes aside (though highkey I love rice) the traditional culture would be fun to experience, as something very different to Western countries.", "value": 1 }];
+let POST_COVID_TRAVEL = {
+  "Many Asian countries (Japan, Korea, Singapore, Taiwan ...)": 1, "Canada": 1, "Russia; I want to explore the culture and the Russian wilderness": 1, "Japan": 1, "Italy": 1, "Europe and Asia": 1, "Germany/Munich to watch soccer games": 1, " Korea, for the soju": 1, "Tuscaloosa, Alabama to watch a Crimson Tide home football game": 1, "Singapore, European Union": 1, "Korea - Fried Chicken": 1, "Paris, France": 1, " Japan, big weeb vibes. ": 1, "Italy because PIZZA": 1, " South Korea": 1, "Amsterdam, Netherlands, since I had planned to travel there but cancelled due to Omicron": 1, "China: see family and embrace culture": 1, "China, to visit family": 1, " Japan for the scenic views and the food": 1, "San Francisco": 1, " Japan": 1, "Germany to drive around": 1, "United Kingdom, Would love to watch a cricket game :D": 1, "Japan! I love the culture, food, and have never been to Asia before.": 1, " Tanzania for the Serengeti": 1, "South America for the ancient ruins": 1, "India": 1, "Japan; I want to be in a country where rice is fast food - IMAGINE??? Here if you get a rice bowl, it's more expensive than housing in San Fran, but in Japan it's like their McDonalds 🤤 jokes aside (though highkey I love rice) the traditional culture would be fun to experience, as something very different to Western countries.": 1
+};
 
 // What has been your favourite restaurant to eat at in Waterloo?
-let FAVOURITE_RESTAURANT = [
-  { "name": "Baba's Grill", "value": 1 },
-  { "name": "Bao", "value": 1 },
-  { "name": "Bao sandwich bar", "value": 1 },
-  { "name": "Beertown", "value": 2 },
-  { "name": "Betterchef", "value": 1 },
-  { "name": "Chef on Call", "value": 1 },
-  { "name": "DoShack", "value": 1 },
-  { "name": "Fresh Burrito", "value": 1 },
-  { "name": "Gol's Lanzhou Noodle", "value": 1 },
-  { "name": "iPho", "value": 1 },
-  { "name": "Ipho", "value": 1 },
-  { "name": "It's not the best restaurant, but Shawerma Plus has probably been the only reason I survived to graduation.", "value": 1 },
-  { "name": "Ken Sushi", "value": 2 },
-  { "name": "KEN Sushi House", "value": 1 },
-  { "name": "Ken's", "value": 1 },
-  { "name": "Kinkaku", "value": 2 },
-  { "name": "Kinkaku Izakaya", "value": 1 },
-  { "name": "Kinkaku/Jinzakaya", "value": 1 },
-  { "name": "Kismet", "value": 1 },
-  { "name": "Leung Yue Hot Pot", "value": 1 },
-  { "name": "Mimo Thai", "value": 1 },
-  { "name": "Mizu (gotta get that omurice)", "value": 1 },
-  { "name": "Nuri Village", "value": 2 },
-  { "name": "Proof's Kitchen", "value": 1 },
-  { "name": "Shawarma Plus", "value": 2 },
-  { "name": "The Owl of Minerva", "value": 1 },
-  { "name": "The Poke Box", "value": 2 },
-  { "name": "The Works", "value": 1 }];
+// let FAVOURITE_RESTAURANT = [
+//   { "name": "Baba's Grill", "value": 1 },
+//   { "name": "Bao", "value": 2 },
+//   { "name": "Beertown", "value": 2 },
+//   { "name": "Betterchef", "value": 1 },
+//   { "name": "Chef on Call", "value": 1 },
+//   { "name": "DoShack", "value": 1 },
+//   { "name": "Fresh Burrito", "value": 1 },
+//   { "name": "Gol's Lanzhou Noodle", "value": 1 },
+//   { "name": "iPho", "value": 2 },
+//   { "name": "Ken Sushi", "value": 3 },
+//   { "name": "Ken's", "value": 1 },
+//   { "name": "Kinkaku", "value": 4 },
+//   { "name": "Jinzakaya", "value": 1 },
+//   { "name": "Kismet", "value": 1 },
+//   { "name": "Leung Yue Hot Pot", "value": 1 },
+//   { "name": "Mimo Thai", "value": 1 },
+//   { "name": "Mizu (gotta get that omurice)", "value": 1 },
+//   { "name": "Nuri Village", "value": 2 },
+//   { "name": "Proof's Kitchen", "value": 1 },
+//   { "name": "Shawarma Plus", "value": 3 },
+//   { "name": "The Owl of Minerva", "value": 1 },
+//   { "name": "The Poke Box", "value": 2 },
+//   { "name": "The Works", "value": 1 }];
+let FAVOURITE_RESTAURANT = {
+  "Baba's Grill": 1,
+  "Bao": 2,
+  "Beertown": 2,
+  "Betterchef": 1,
+  "Chef on Call": 1,
+  "DoShack": 1,
+  "Fresh Burrito": 1,
+  "Gol's Lanzhou Noodle": 1,
+  "iPho": 2,
+  "Ken Sushi": 3,
+  "Ken's": 1,
+  "Kinkaku": 4,
+  "Jinzakaya": 1,
+  "Kismet": 1,
+  "Leung Yue Hot Pot": 1,
+  "Mimo Thai": 1,
+  "Mizu (gotta get that omurice)": 1,
+  "Nuri Village": 2,
+  "Proof's Kitchen": 1,
+  "Shawarma Plus": 3,
+  "The Owl of Minerva": 1,
+  "The Poke Box": 2,
+  "The Works": 1
+};
 
 // Which store(s) was (were) your go-to grocery stores?
 let GROCERY = [{ "name:": "Walmart", "value": 23 }, { "name:": "Waterloo Central Supermarket/The asian supermarket", "value": 21 }, { "name:": "Sobey's", "value": 18 }, { "name:": "Costco", "value": 9 }, { "name:": "T&T", "value": 21 }, { "name:": "Zehrs", "value": 4 }, { "name:": "Freshco", "value": 1 }, { "name:": "Superstore", "value": 1 }, { "name:": "Vincenzos", "value": 1 }, { "name:": "Uptown Valumart", "value": 4 }];
