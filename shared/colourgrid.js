@@ -40,16 +40,14 @@ function renderColorGrid(elem, data, rows, columns, options) {
         ypos += height;
     }
 
-    console.log(gridData);
-
     var hoverDiv = d3.select("body").append("div")
         .attr("class", "tooltip-colour-grid")
         .style("opacity", 0);
 
     var grid = elem
         .append("svg")
-        .attr("width", options.width)
-        .attr("height", options.width);
+        .attr("width", width * columns)
+        .attr("height", height * rows);
 
     var row = grid.selectAll(".row")
         .data(gridData)

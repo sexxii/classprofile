@@ -133,7 +133,7 @@ import {
   COOP_STORY,
   PARTY_STORY,
   COVID_RELATIONSHIPS,
-  FAVOURITE_RESTAURANT,
+  FAV_RESTAURANT,
   GROCERY,
   LOCATION_ONLINE_TERM,
   FAV_ANIMAL,
@@ -1784,7 +1784,7 @@ function renderCovid(options) {
 
 function renderMisc(options) {
 
-  drawWordCloud(d3.select("#fav-restaurant"), FAVOURITE_RESTAURANT, options);
+  drawWordCloud(d3.select("#fav-restaurant"), FAV_RESTAURANT, options);
 
   renderHorizontalBarChat(
     d3.select("#grocery"),
@@ -1799,7 +1799,7 @@ function renderMisc(options) {
     LOCATION_ONLINE_TERM,
     options.width,
     280,
-    true
+    false
   );
 
 
@@ -1818,7 +1818,7 @@ function renderMisc(options) {
     FIGHTS,
     options.width,
     280,
-    true
+    false
   );
 
 
@@ -1842,7 +1842,7 @@ function renderMisc(options) {
     {
       binCount: 8,
       yAxisTitle: "Count",
-      xAxisTitle: "Number of cries",
+      xAxisTitle: "Hours per week",
     }
   );
 
@@ -1854,7 +1854,7 @@ function renderMisc(options) {
     {
       binCount: 8,
       yAxisTitle: "Count",
-      xAxisTitle: "Number of cries",
+      xAxisTitle: "Hours per week",
     }
   );
 
@@ -1866,7 +1866,7 @@ function renderMisc(options) {
     {
       binCount: 8,
       yAxisTitle: "Count",
-      xAxisTitle: "Number of cries",
+      xAxisTitle: "Hours per week",
     }
   );
 
