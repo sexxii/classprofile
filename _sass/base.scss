@@ -2,23 +2,24 @@
 $content-width: 1200px;
 
 // Background colors
-$bg-1: #d7fff7ef;
-$bg-2: #fff7db;
-$bg-3: #f3f3f3; 
-$bg-4: #cbf6db;
-$bg-5: #ffe5d9;
-$bg-6: #e6e7ff;
-$bg-7: #ffe0e0;
+// TODO: fix colours
+$bg-1: #d4dcdaef;
+$bg-2: #f5f5f5;
+$bg-3: #e5e1d1;
+$bg-4: #e3f7ea;
+$bg-5: #fff0e9;
+$bg-6: #f1f2ff;
+$bg-7: #ffecec;
 $bg-8: #e4f4f3; 
 
 
 /* TYPOGRAPHY */
 body {
-    color: rgb(71, 71, 71);
+    color: rgb(42, 42, 42);
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 300;
-    background-color: rgb(71, 71, 71);;
+    background-color: rgb(42, 42, 42);
 }
 
 /* GRID */
@@ -84,7 +85,7 @@ section {
   background-image:url('../img/cover.png');
   background-repeat:no-repeat;
   background-size:cover;
-  background-color: $bg-8;
+  background-color: #e9e8e8;
   background-position: center center;
   height: 100vh;
   .content {
