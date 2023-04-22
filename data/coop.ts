@@ -671,7 +671,7 @@ let INTERVIEWS_BOMBED = [
 
 const COOP_RATINGS = [
   {
-    group: "Coop 1",
+    group: "Co-op 1",
     "rating-outstanding": 25,
     "rating-excellent": 26,
     "rating-very-good": 4,
@@ -679,7 +679,7 @@ const COOP_RATINGS = [
     "rating-satisfactory": 0,
   },
   {
-    group: "Coop 2",
+    group: "Co-op 2",
     "rating-outstanding": 27,
     "rating-excellent": 24,
     "rating-very-good": 3,
@@ -687,7 +687,7 @@ const COOP_RATINGS = [
     "rating-satisfactory": 0,
   },
   {
-    group: "Coop 3",
+    group: "Co-op 3",
     "rating-outstanding": 33,
     "rating-excellent": 19,
     "rating-very-good": 2,
@@ -695,7 +695,7 @@ const COOP_RATINGS = [
     "rating-satisfactory": 1,
   },
   {
-    group: "Coop 4",
+    group: "Co-op 4",
     "rating-outstanding": 28,
     "rating-excellent": 19,
     "rating-very-good": 3,
@@ -703,7 +703,7 @@ const COOP_RATINGS = [
     "rating-satisfactory": 0,
   },
   {
-    group: "Coop 5",
+    group: "Co-op 5",
     "rating-outstanding": 24,
     "rating-excellent": 27,
     "rating-very-good": 1,
@@ -711,7 +711,7 @@ const COOP_RATINGS = [
     "rating-satisfactory": 0,
   },
   {
-    group: "Coop 6",
+    group: "Co-op 6",
     "rating-outstanding": 26,
     "rating-excellent": 17,
     "rating-very-good": 0,
@@ -824,37 +824,37 @@ const COOP_TYPES = [
 
 const COOP_BREAKDOWN = [
   {
-    group: "Coop 1",
+    group: "Co-op 1",
     "coop-app-num": 97.5,
     "coop-interviews": 4.63,
     "coop-offers": 1,
   },
   {
-    group: "Coop 2",
+    group: "Co-op 2",
     "coop-app-num": 67.2,
     "coop-interviews": 7.56,
     "coop-offers": 1.82,
   },
   {
-    group: "Coop 3",
+    group: "Co-op 3",
     "coop-app-num": 67.7,
     "coop-interviews": 5.44,
     "coop-offers": 1.69,
   },
   {
-    group: "Coop 4",
+    group: "Co-op 4",
     "coop-app-num": 55,
     "coop-interviews": 6.1,
     "coop-offers": 2.05,
   },
   {
-    group: "Coop 5",
+    group: "Co-op 5",
     "coop-app-num": 39.1,
     "coop-interviews": 6.7,
     "coop-offers": 2.3,
   },
   {
-    group: "Coop 6",
+    group: "Co-op 6",
     "coop-app-num": 28.7,
     "coop-interviews": 4.83,
     "coop-offers": 1.78,
@@ -863,42 +863,42 @@ const COOP_BREAKDOWN = [
 
 const COOP_JOB_SOURCE = [
   {
-    group: "Coop 1",
+    group: "Co-op 1",
     "coop-main-round": 54.55,
     "coop-continuous": 30.91,
     "coop-external": 14.55,
     "coop-previous-employer": 0,
   },
   {
-    group: "Coop 2",
+    group: "Co-op 2",
     "coop-main-round": 74.54,
     "coop-continuous": 10.91,
     "coop-external": 12.73,
     "coop-previous-employer": 1.82,
   },
   {
-    group: "Coop 3",
+    group: "Co-op 3",
     "coop-main-round": 54.55,
     "coop-continuous": 27.27,
     "coop-external": 10.91,
     "coop-previous-employer": 7.27,
   },
   {
-    group: "Coop 4",
+    group: "Co-op 4",
     "coop-main-round": 43.14,
     "coop-continuous": 19.61,
     "coop-external": 27.45,
     "coop-previous-employer": 9.8,
   },
   {
-    group: "Coop 5",
+    group: "Co-op 5",
     "coop-main-round": 58.18,
     "coop-continuous": 5.45,
     "coop-external": 18.18,
     "coop-previous-employer": 18.18,
   },
   {
-    group: "Coop 6",
+    group: "Co-op 6",
     "coop-main-round": 54.72,
     "coop-continuous": 0,
     "coop-external": 33.96,
