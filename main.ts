@@ -353,7 +353,7 @@ window.onload = () => {
   setMultiBarActive("enriched-overall", enriched_vs_grades);
   setMultiBarActive("entrance-overall", entrance_vs_grades);
   setMultiBarActive("1a", housing_terms);
-  // setMultiBarActive("work-location-0", work_location);
+  setMultiBarActive("1st co-op", coop_terms);
   setupListeners();
 };
 
@@ -783,7 +783,6 @@ function renderCoop(options) {
     }
   );
 
-  // todo (robbie): fix bug where every term is rendering together on initial load
   renderMultiSeriesHorizontalBarChat(
     d3.select("#coop-types"),
     COOP_TYPES,
@@ -794,6 +793,7 @@ function renderCoop(options) {
       return { ...acc, [value]: Object.keys(acc).length };
     }, {})
   );
+
   renderGroupedBarChart(
     d3.select("#coop-breakdown"),
     COOP_BREAKDOWN,
