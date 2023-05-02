@@ -735,17 +735,17 @@ function renderCoop(options) {
       lineLabels: [
         {
           x: "6th",
-          value: 50,
+          value: 48,
           location: "Women",
         },
         {
           x: "6th",
-          value: 66,
+          value: 53,
           location: "Men",
         },
       ],
-      yAxisTitle: "Hourly salary in CAD",
-      xAxisTitle: "Co-op term",
+      yAxisTitle: "Average Hourly Salary in CAD",
+      xAxisTitle: "Co-op Term",
     }
   );
   renderPieChart(
