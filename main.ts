@@ -179,6 +179,7 @@ import {
   DIAGNOSED_MENTAL_HEALTH_ISSUES,
   SELF_ESTEEM,
   EXERCISE_FREQ,
+  // todo: robbie make a graph for excercise type
   EXERCISE_TYPE,
   EXERCISE_WORDS,
   SPORT_LEVEL,
