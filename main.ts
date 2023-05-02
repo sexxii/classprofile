@@ -90,7 +90,6 @@ import {
   CEGEP,
   CEGEP_TAKEN,
   ADMISSION_AVERAGE,
-  FAVOURITE_PET,
 } from "./data/background";
 import {
   COURSE_WITH_LARGEST_WORKLOAD,
