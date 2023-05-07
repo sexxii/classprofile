@@ -1490,7 +1490,7 @@ function renderFinances(options) {
       domain: [0, 100],
       binCount: 10,
       xAxisTitle: "%",
-      yAxisTitle: "Coop",
+      yAxisTitle: "Co-op",
     }
   );
   renderHistogram(
