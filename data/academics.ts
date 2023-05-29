@@ -690,18 +690,19 @@ let LIKE_FYDP = [
   },
 ];
 
-let CONTINUE_FYDP = [
+// Will you continue your FYDP once you graduate?
+const CONT_FYDP = [
   {
     name: "Yes",
-    value: 3,
-  },
-  {
-    name: "No",
-    value: 34,
+    value: 2,
   },
   {
     name: "Uncertain",
-    value: 17,
+    value: 16,
+  },
+  {
+    name: "No",
+    value: 30,
   },
 ];
 
@@ -1357,7 +1358,7 @@ export {
   ATTEND_OFFICE_HOURS,
   FAVOURITE_PROF,
   LIKE_FYDP,
-  CONTINUE_FYDP,
+  CONT_FYDP,
   FYDP_CATEGORY,
   OVERLOAD_REASON,
   CR_NCR_IN_3A,

@@ -39,7 +39,7 @@ import {
   ATTEND_OFFICE_HOURS,
   BURN_OUT_PER_TERM,
   CLASSES_FAILED,
-  CONTINUE_FYDP,
+  CONT_FYDP,
   CR_NCR_IN_3A,
   DESIGN_TEAM_OR_TECHNICAL_EXTRACURRICULARS,
   FAVOURITE_COURSE,
@@ -140,7 +140,6 @@ import {
   POST_COVID_TRAVEL,
 } from "./data/misc";
 import {
-  CONT_FYDP,
   COOP_CONVERSION,
   FULL_TIME_COMPANY,
   FULL_TIME_COMPANY_TYPE,
@@ -982,8 +981,8 @@ function renderAcademics(options) {
   );
 
   renderPieChart(
-    d3.select("#continue-fydp"),
-    CONTINUE_FYDP,
+    d3.select("#cont-fydp"),
+    CONT_FYDP,
     options.width * 0.75,
     options.width * 0.75
   );
@@ -1982,12 +1981,6 @@ function renderFuture(options) {
     options.width,
     180,
     false
-  );
-  renderPieChart(
-    d3.select("#cont-fydp"),
-    CONT_FYDP,
-    options.width * 0.75,
-    options.width * 0.75
   );
 }
 
