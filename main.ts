@@ -1253,7 +1253,7 @@ function renderBackground(options) {
     GENDER,
     options.width,
     280,
-    true
+    false
   );
 
   renderHorizontalBarChat(
